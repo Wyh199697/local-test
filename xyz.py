@@ -3,8 +3,11 @@ import numpy as np
 import math as ma
 import matplotlib.pyplot as plt
 from scipy import integrate
+from mpl_toolkits.mplot3d import axes3d
+
+
 birth_data = []
-with open('C:\\Users\\1\\Desktop\\2020-05-24 23_28_29.csv') as csvfile:
+with open('C:\\Users\\70894\\Desktop\\dataset\\2020-05-25 17_56_18.csv') as csvfile:
     csv_reader = csv.reader(csvfile)  # 使用csv.reader读取csvfile中的文件
     birth_header = next(csv_reader)  # 读取第一行每一列的标题
     for row in csv_reader:  # 将csv 文件中的数据保存到birth_data中
@@ -22,7 +25,7 @@ for i in range(len(birth_data)):
 #birth_data = [[float(x) for x in row] for row in birth_data]
 
 def init_colors():
-    return ['blue', 'red', 'green', 'black', 'pink', 'purple', 'gray', 'coral','blanchedalmond','deeppink']
+    return ['blue', 'red', 'green', 'black', 'blue', 'purple', 'green', 'green','blanchedalmond','deeppink']
 
 def show_graph(data, save_png_name=None, colors=None, offset=0):
     """
@@ -45,7 +48,7 @@ def show_graph(data, save_png_name=None, colors=None, offset=0):
     Y = []
     for j in range(1+offset, 8 + offset, 3):
         for i in range(0, len(data)):
-            color = colors[j]
+            color = colors[j-offset]
             X.append(i)
             Y.append(data[i][j])
         temp, = plt.plot(X, Y, linewidth=0.5, color=color, label='')
