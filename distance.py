@@ -23,16 +23,16 @@ vel = [0 for i in range(0, win_size)]
 delta_t = [0 for i in range(0, win_size)]
 avg_arr = [0 for i in range(0, avg_size-1)]
 avg_arr2 = []
-delta = float(0.01)
+delta = float(0.02)
 const_delta = 0
 avg = 1
-filt = 1 and avg == 0
+filt = 0 and avg == 0
 row = [0 for i in range(0,5)]
 
 birth_data = []
 filter_a = []
 
-with open('C:\\Users\\70894\\Desktop\\2020-05-10 13_16_34.csv') as csvfile:
+with open('C:\\Users\\1\\Desktop\\2020-05-24 21_42_11.csv') as csvfile:
     csv_reader = csv.reader(csvfile)  # 使用csv.reader读取csvfile中的文件
     birth_header = next(csv_reader)  # 读取第一行每一列的标题
     for row in csv_reader:  # 将csv 文件中的数据保存到birth_data中
