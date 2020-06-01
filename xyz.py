@@ -7,7 +7,7 @@ from mpl_toolkits.mplot3d import axes3d
 
 
 birth_data = []
-with open('C:\\Users\\70894\\Desktop\\dataset\\2020-05-25 17_56_18.csv') as csvfile:
+with open('C:\\Users\\1\\Desktop\\dataset\\2020-05-30 17_29_30.csv') as csvfile:
     csv_reader = csv.reader(csvfile)  # 使用csv.reader读取csvfile中的文件
     birth_header = next(csv_reader)  # 读取第一行每一列的标题
     for row in csv_reader:  # 将csv 文件中的数据保存到birth_data中
@@ -64,7 +64,7 @@ def show_graph(data, save_png_name=None, colors=None, offset=0):
     plt.legend(handles=plts, labels=labels)
     if save_png_name is not None:
         plt.savefig(save_png_name)
-    plt.show()
+    #plt.show()
     '''if save_png_name is not None:
         plt.savefig(save_png_name)'''
 
