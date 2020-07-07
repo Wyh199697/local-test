@@ -17,6 +17,7 @@ win_size = 25
 avg_size = 100
 v_pre = float(0)
 a_pre = float(0)
+p_pre = float(0)
 pos = float(0)
 win_a = [0 for i in range(0, win_size)]
 vel = [0 for i in range(0, win_size)]
@@ -33,7 +34,7 @@ birth_data = []
 filter_a = []
 
 birth_data = []
-with open('C:\\Users\\1\\Desktop\\dataset\\2020-05-30 21_29_57.csv') as csvfile:
+with open('C:\\Users\\1\\Desktop\\dataset\\2020-07-06 23_14_06.csv') as csvfile:
     csv_reader = csv.reader(csvfile)  # 使用csv.reader读取csvfile中的文件
     birth_header = next(csv_reader)  # 读取第一行每一列的标题
     for row in csv_reader:  # 将csv 文件中的数据保存到birth_data中
@@ -44,15 +45,18 @@ birth_header.append('v_z')
 birth_header.append('pos_x')
 birth_header.append('pos_y')
 birth_header.append('pos_z')
+birth_header.append('in_x')
+birth_header.append('in_y')
+birth_header.append('in_z')
 for i in range(len(birth_data)):
     birth_data[i] = [float(x) for x in birth_data[i]]
-    for j in range(6):
+    for j in range(9):
         birth_data[i].append(0)
 filter_a = [0 for i in range(0, len(birth_data))]
 #cmp = [[float(x) for x in row] for row in birth_data]
 
 def init_colors():
-    return ['blue', 'red', 'green', 'black', 'blue', 'purple', 'green', 'green','blanchedalmond','deeppink']
+    return ['blue', 'red', 'green', 'black', 'blue', 'purple', 'green', 'green','blanchedalmond','deeppink', 'aquamarine', 'cool']
 
 
 count = 0
@@ -102,7 +106,7 @@ def show_graph(data, save_png_name=None, colors=None, offset=0):
     labels = []
     X = []
     Y = []
-    for j in range(1+offset, 8 + offset, 3):
+    for j in range(1+offset, 11 + offset, 3):
         for i in range(0, len(data)):
             color = colors[j-offset]
             X.append(i)
@@ -146,6 +150,7 @@ for k in range(0,3):
     v_pre = 0
     a_pre = 0
     pos = 0
+    in_pos = 0
     for j in range(0, len(filter_a)):
         if count != win_size:
             if avg == 1:
@@ -184,6 +189,12 @@ for k in range(0,3):
                 birth_data[j-win_size+i][7+k] = pos
                 flag = 0
 
+            in_pos += pos*delta_t[0]
+            birth_data[j - win_size][10 + k] = in_pos
+            for i in range(1, win_size):
+                in_pos += birth_data[j-win_size+i][7+k] * delta_t[i]
+                birth_data[j-win_size+i][10+k] = in_pos
+
             v_pre = vel[win_size - 1]
             a_pre = win_a[win_size - 1]
             if avg == 1:
@@ -213,9 +224,9 @@ x = [i * delta for i in range(0, len(avg_arr))]
 # y = [birth_data[i][3] for i in range(0, len(birth_data))]
 pos = integrate.trapz(vel, x)
 print(pos * 100)'''
-print('x: ' + str(birth_data[len(birth_data) - 100][7]*100) + "cm")
-print('y: ' + str(birth_data[len(birth_data) - 100][8]*100) + "cm")
-print('z: ' + str(birth_data[len(birth_data) - 100][9]*100) + "cm")
+print('x: ' + str(birth_data[len(birth_data) - 100][10]*100) + "cm")
+print('y: ' + str(birth_data[len(birth_data) - 100][11]*100) + "cm")
+print('z: ' + str(birth_data[len(birth_data) - 100][12]*100) + "cm")
 show_graph(birth_data, "x", init_colors(), 0)
 show_graph(birth_data, "y", init_colors(), 1)
 show_graph(birth_data, "z", init_colors(), 2)

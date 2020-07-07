@@ -4,7 +4,7 @@ import math as ma
 import matplotlib.pyplot as plt
 from scipy import integrate
 birth_data = []
-with open('C:\\Users\\1\\Desktop\\AccelerationExplorer-2020-5-23-5-24-39.csv') as csvfile:
+with open('C:\\Users\\1\\Desktop\\dataset\\AccelerationExplorer-2020-6-21-11-22-50.csv') as csvfile:
     csv_reader = csv.reader(csvfile)  # 使用csv.reader读取csvfile中的文件
     birth_header = next(csv_reader)  # 读取第一行每一列的标题
     for row in csv_reader:  # 将csv 文件中的数据保存到birth_data中
@@ -46,7 +46,7 @@ def show_graph(data, save_png_name=None, colors=None):
     X = []
     Y = []
     for j in range(1, 6):
-        if j == 1 or j == 4 or j == 5:
+        if j == 2 or j == 4 or j == 5:
             for i in range(0, len(data)):
                 color = colors[j]
                 X.append(i)
@@ -75,7 +75,7 @@ y = []
 x = []
 for j in range(0, len(birth_data)):
     x = [birth_data[i][0] for i in range(0, j)]
-    y = [birth_data[i][1] for i in range(0, j)]
+    y = [birth_data[i][2] for i in range(0, j)]
     v = integrate.trapz(y, x)
     vel.append(v)
     birth_data[j].append(v)
