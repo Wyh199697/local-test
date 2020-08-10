@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="43786582-d471-4f4c-97b5-a5497b9b556c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dis_local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dis_local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voronoitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/voronoitest.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,27 +50,20 @@
   </component>
   <component name="ProjectId" id="1cIBz8aYFlMBd2PEstR5juZQXPb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.voronoitest">
+  <component name="RunManager" selected="Python.solution">
     <configuration name="distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dis_local" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="latest-wired+(copy)3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dis_local" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,12 +116,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/latest-wired+(copy)3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solution.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.solution" />
         <item itemvalue="Python.voronoitest" />
         <item itemvalue="Python.distance" />
         <item itemvalue="Python.fsensor" />
         <item itemvalue="Python.xyz" />
-        <item itemvalue="Python.latest-wired+(copy)3" />
       </list>
     </recent_temporary>
   </component>
@@ -204,20 +217,20 @@
       <workItem from="1596870705626" duration="18898000" />
       <workItem from="1596958276235" duration="1987000" />
       <workItem from="1597038389586" duration="10000" />
+      <workItem from="1597038704965" duration="236000" />
+      <workItem from="1597038956292" duration="6979000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -236,6 +249,45 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="723" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597045062746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="723" y="321" key="#com.intellij.fileTypes.FileTypeChooser/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597045062746" />
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1597048199508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597048199508" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1597048199508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.center/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597048199508" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1597048199507">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.left/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597048199507" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1597048199508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="281" key="GridCell.Tab.0.right/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597048199508" />
+    <state width="1878" height="348" key="GridCell.Tab.1.bottom" timestamp="1597047169095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="348" key="GridCell.Tab.1.bottom/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597047169095" />
+    <state width="1878" height="348" key="GridCell.Tab.1.center" timestamp="1597047169094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="348" key="GridCell.Tab.1.center/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597047169094" />
+    <state width="1878" height="348" key="GridCell.Tab.1.left" timestamp="1597047169094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="348" key="GridCell.Tab.1.left/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597047169094" />
+    <state width="1878" height="348" key="GridCell.Tab.1.right" timestamp="1597047169094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="348" key="GridCell.Tab.1.right/-2560.0.1280.780/0.0.1920.1040@0.0.1920.1040" timestamp="1597047169094" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -281,19 +333,9 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/voronoitest.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/voronoitest.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/voronoitest.py</url>
-          <line>99</line>
-          <option name="timeStamp" value="67" />
+          <url>file://$PROJECT_DIR$/solution.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -317,11 +359,12 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/local_test$distance.coverage" NAME="distance Coverage Results" MODIFIED="1596806978585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/local_test$voronoitest.coverage" NAME="voronoitest Coverage Results" MODIFIED="1596959527825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/local_test$xyz.coverage" NAME="xyz Coverage Results" MODIFIED="1590831017483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/local_test$function_base.coverage" NAME="function_base Coverage Results" MODIFIED="1590209803528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../vir_local_test/Lib/site-packages/numpy/lib" />
-    <SUITE FILE_PATH="coverage/local_test$fsensor.coverage" NAME="fsensor Coverage Results" MODIFIED="1592753078361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/local_test$latest_wired__copy_3.coverage" NAME="latest-wired+(copy)3 Coverage Results" MODIFIED="1590394663694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/local_test$fsensor.coverage" NAME="fsensor Coverage Results" MODIFIED="1592753078361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/local_test$function_base.coverage" NAME="function_base Coverage Results" MODIFIED="1590209803528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../vir_local_test/Lib/site-packages/numpy/lib" />
+    <SUITE FILE_PATH="coverage/local_test$distance.coverage" NAME="distance Coverage Results" MODIFIED="1596806978585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/local_test$xyz.coverage" NAME="xyz Coverage Results" MODIFIED="1590831017483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/local_test$solution.coverage" NAME="solution Coverage Results" MODIFIED="1597048199502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/local_test$voronoitest.coverage" NAME="voronoitest Coverage Results" MODIFIED="1597045179929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

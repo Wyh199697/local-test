@@ -13,6 +13,9 @@ SIM_dist_b_a_1 = 0
 def tan_a_b(orin_tan, angle):
     return (orin_tan + math.tan(angle)) / (1 - orin_tan * math.tan(angle))
 
+def dis_cmp(p1, p2):
+    return (pow(p1[0]) + pow(p1[1])) - (pow(p2[0]) + pow(p2[1]))
+
 def cal(size = 10):
     nx = []
     ny = []
@@ -28,7 +31,8 @@ def cal(size = 10):
 
 
     #final_points = [[76, 86], [498, 336], [149, 479], [114, 63], [54, 286], [382, 450], [10, 255], [412, 193], [367, 147], [202, 454], [142, 2], [1, 6], [99, 407], [466, 404], [185, 385], [466, 422], [172, 324], [257, 70], [364, 157], [371, 296], [53, 253], [358, 207], [271, 242], [191, 282], [321, 392]]
-    final_points = [[6, 2], [8, 3], [7, 4], [5, 8], [6, 5], [3, 2], [8, 7], [2, 2], [0, 6], [4, 8]]
+    #final_points = [[6, 2], [8, 3], [7, 4], [5, 8], [6, 5], [3, 2], [8, 7], [2, 2], [0, 6], [4, 8]]
+    #final_points.sort(cmp = )
     xx = np.array(np.array(final_points)[:,0]).reshape(-1, 1)
     yy = np.array(np.array(final_points)[:,1])
     #PCA
