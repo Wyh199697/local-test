@@ -54,6 +54,7 @@ class PointInfo:
                 print("(%d, %d)" % (b.x, b.y), tan[b], end=' ')
                 # print(b, tan[b])
             print()
+
     def show_info(self, p):
         dis = self.dis_info[final_points[i]]
         tan = self.tan_info[final_points[i]]
@@ -67,6 +68,8 @@ class PointInfo:
             # print(b, tan[b])
         print()
 
+
+e_r = 10
 num = 20
 final_points = []
 for i in range(num):
@@ -83,10 +86,29 @@ p2 = final_points[6]
 '''x = np.linspace(p1.x, p2.x, 10)
 y = (p1.cal_tan_angle(p2)) * (x - p1.x) + p1.x
 plt.plot(x, y, 'o')'''
-plt.plot([p1.x, p2.x], [p1.y, p2.y], color='b')
+#plt.plot([p1.x, p2.x], [p1.y, p2.y], color='b')
 # plt.scatter([p1.x, p1.y], [p2.x, p2.y], color='b')
 p_i = PointInfo(num, final_points)
-for i in range(num):
-    p_i.show_info(final_points[i])
+'''for i in range(num):
+    p_i.show_info(final_points[i])'''
+
+num_p = input('0-19: ')
+r_o = Point(final_points[int(num_p)].x, final_points[int(num_p)].y)
+angle = random.uniform(-math.pi, math.pi)
+r_o.x += e_r * math.sin(angle)
+r_o.y += e_r * math.cos(angle)
+plt.plot(r_o.x, r_o.y, 'bo')
+plt.plot([final_points[int(num_p)].x, r_o.x], [final_points[int(num_p)].y, r_o.y], color='b')
+x = np.arange(r_o.x - e_r, r_o.x + e_r, 0.1)
+y = np.arange(r_o.y - e_r, r_o.y + e_r, 0.1)
+x, y = np.meshgrid(x, y)
+plt.contour(x, y, (x-r_o.x)**2 + (y-r_o.y)**2, [e_r**2])     #x**2 + y**2 = 9 的圆形
+plt.axis('scaled')
 plt.show()
+n = 0
+for i in range(num):
+    p = final_points[i]
+    if pow(p.x - r_o.x, 2) + pow(p.y - r_o.y, 2) <= pow(e_r, 2):
+        n += 1
+print(n - 1)
 print(p1.cal_tan_angle(p2))
