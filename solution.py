@@ -69,7 +69,7 @@ e_r = 10
 num = 20
 final_points = []
 for i in range(num):
-    final_points.append(Point(random.randrange(num), random.randrange(num)))
+    final_points.append(Point(random.randrange(50), random.randrange(50)))
     plt.plot(final_points[i].x, final_points[i].y, 'ro')
     # final_points.append([nx[i], ny[i]])
 
@@ -101,19 +101,21 @@ x, y = np.meshgrid(x, y)
 plt.contour(x, y, (x - r_o.x) ** 2 + (y - r_o.y) ** 2, [e_r ** 2])  # x**2 + y**2 = 9 的圆形
 
 sum = 0
+test_points = []
 for i in range(num):
     p = final_points[i]
     if pow(p.x - r_o.x, 2) + pow(p.y - r_o.y, 2) <= pow(e_r, 2):
+        test_points.append(p)
+        print(p.x, p.y)
         sum += 1
 print(sum)
 info = p_i.points_info[final_points[int(num_p)]]
-j = 5
+j = 2
 while j >= 0:
     n = input('0-19: ')
     n_p = final_points[int(n)]
     o_p = final_points[int(num_p)]
     k = info[n_p]
-    aa = math.atan2(-o_p.y + n_p.y, -o_p.x + n_p.x)
     x = r_o.x + k[0] * math.cos(k[1])
     y = r_o.y + k[0] * math.sin(k[1])
     plt.plot(x, y, 'bo')
