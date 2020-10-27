@@ -173,10 +173,10 @@ plot_data(moved_data, true_data, "P: moved data", "Q: true data")
 
 center_of_P, P_centered = center_data(P)
 for i in range(3):
-    print(P_centered[0][i], P_centered[1][i], '0')
+    print(P_centered[0][i] / 100, P_centered[1][i] / 100, '0')
 center_of_Q, Q_centered = center_data(Q)
 for i in range(num_points):
-    print(Q_centered[0][i], Q_centered[1][i], '0')
+    print(Q_centered[0][i] / 100, Q_centered[1][i] / 100, '0')
 
 ax = plot_data(P_centered, Q_centered,
                label_1='Moved data centered',
